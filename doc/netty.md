@@ -19,7 +19,7 @@
 MainReactor负责客户端的连接请求，并将请求转交给SubReactor  
 SubReactor负责相应通道的IO读写请求  
 非IO请求（具体逻辑处理）的任务则会直接写入队列，等待worker threads进行处理  
-![线程模型](image/threadmodel.png)
+![线程模型](../image/threadmodel.png)
 
 
 ## TCP 粘包/拆包
