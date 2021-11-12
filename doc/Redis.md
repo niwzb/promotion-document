@@ -34,3 +34,5 @@ slave-lazy-flush（针对slave进行全量数据同步，slave在加载master的
 * list 用 快速列表（早期用ziplist和双向链表）
 * zset 用 跳表（score）
 * Redis5.0 引入listpack
+
+## dict（字典）rehash

@@ -60,5 +60,6 @@ SubReactor负责相应通道的IO读写请求
 I/O任务 即selectionKey中ready的事件，如accept、connect、read、write等，由processSelectedKeys方法触发。  
 非IO任务 添加到taskQueue中的任务，如register0、bind0等任务，由runAllTasks方法触发。
  
-
-  
+## poll 和 epoll 区别
+* poll采用轮询方式检查fd集合I/O是否就绪，fd增加
+* epoll给fd注册回调函数
